@@ -40,3 +40,16 @@ SELECT
 FROM panel_country_year
 WHERE year = 2022
 ORDER BY mortality_rank_2022;
+-- Share of regional total child mortality per year (2022 snapshot)
+SELECT
+    iso_code,
+    year,
+    child_mortality,
+    ROUND(SUM(child_mortality) OVER (PARTITION BY year), 2) AS regional_total,
+    ROUND(
+        100.0 * child_mortality / SUM(child_mortality) OVER (PARTITION BY year),
+        1
+    ) AS share_of_regional_total_pct
+FROM panel_country_year
+WHERE year = 2022
+ORDER BY share_of_regional_total_pct DESC;
