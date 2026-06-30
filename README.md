@@ -1,4 +1,4 @@
-Project 5: Health and Development, West Africa
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/a617effa-345e-49e9-a326-cd5fba85b42d" />Project 5: Health and Development, West Africa
 Business question
 Has health in Ghana, Nigeria, and peer West African countries genuinely improved since 2000, and does health spending explain the improvement?
 Data sources
@@ -14,4 +14,5 @@ Policy and donor attention focused on immunisation coverage, not aggregate healt
 Repo structure
 See /sql, /notebooks, /dashboard, /docs/data_dictionary.md
 Dashboard
-[Paste your Looker Studio shareable link here]
+https://datastudio.google.com/reporting/61d4aec1-d817-49e6-b417-69b6486daae8
+
